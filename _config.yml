@@ -1,8 +1,8 @@
 # Site settings
 title: Yasir Ibrahim
 description: "Graduate Research Assistant at Texas A&M University"
-baseurl: ""
 url: "https://grgor08.github.io"
+baseurl: ""
 profilepic: '/images/DSC01405.jpg'
 bkimage: '/images/bk1.jpg'
 google_analytics: UA-XXXXXX-X
