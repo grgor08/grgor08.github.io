@@ -1,22 +1,18 @@
 # Site settings
-title: Thomas Zühlke
-description: 'Business Card Page'
-url: 'https://www.zuehlke.cloud'
-baseurl: ''
-profilepic: '/images/tzuehlke.jpg'
+title: Yasir Ibrahim
+description: "Graduate Research Assistant at Texas A&M University"
+url: "https://grgor08.github.io"
+baseurl: ""
+profilepic: '/images/DSC01405.jpg'
 bkimage: '/images/bk1.jpg'
 google_analytics: UA-XXXXXX-X
 font_awesome: 'XXXXXXXXXX.js'
 
 author:
-  name: 'Thomas Zühlke'
-  email: thomas@zuehlke.cloud
-  mastodon: tzuehlke@mstdn.social
-  twitter_username: thomzuehlke
-#  facebook_username: joshgerdes
-  github_username:  tzuehlke
-  linkedin_username:  thomas-zühlke-889182165
-  meetup_name: Azure-Meetup-Rostock-MV
+  name: "Yasir Ibrahim"
+  email: "y.omeribrahim@hotmail.com"
+  linkedin: "https://www.linkedin.com/in/yasir-abdelaziz/"
+  scholar: "https://scholar.google.com/citations?user=1X2D49kAAAAJ&hl=en&authuser=1"
 
 # Build settings
 destination: _site
