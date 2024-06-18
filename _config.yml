@@ -1,8 +1,11 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
-avatar: /logo.png
-email: ngzhio@gmail.com
+title: Yasir Ibrahim
+description: A Phd Candidate
+author: Yasir Ibrahim
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://grgor08.github.io" # the base hostname & protocol for your site
+theme: jekyll-theme-hamilton
+avatar: /DSC01405.jpg
+email: y.omeribrahim@hotmail.com
 
 plugins:
   - jekyll-seo-tag
@@ -32,12 +35,9 @@ exclude:
 twitter:
   username: ngzhio
   card: summary
-logo: logo.png
+logo: DSC01405.jpg
 social:
-  name: Shangzhi Huang
-  links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
+  linkedin: "https://www.linkedin.com/in/yasir-abdelaziz/"
+  scholar: "https://scholar.google.com/citations?user=1X2D49kAAAAJ&hl=en&authuser=1"
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en
