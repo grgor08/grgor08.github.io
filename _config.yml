@@ -1,43 +1,32 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
-avatar: /logo.png
-email: ngzhio@gmail.com
+title: Yasir Ibrahim
+description: A Phd Candidate
+author: Yasir Ibrahim
+url: 'https://grgor08.github.io' 
+baseurl: ''
+avatar: /DSC01405.jpg
+social:
+  linkedin: "https://www.linkedin.com/in/yasir-abdelaziz/"
+  scholar: "https://scholar.google.com/citations?user=1X2D49kAAAAJ&hl=en&authuser=1"
+google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-paginate
-
 paginate: 10
+paginate_path: /page-:num
 
-# Uncomment the below line and set the tracking ID for enabling Google Analytics
-# 
-# google_analytics: 
+#disqus-id: your-disqus-id
 
-# Uncomment the below lines and set the Disqus shortname for enabling Disqus
-# 
-# disqus:
+source: .
+destination: ./_site
 
-# Jekyll
-# ======
-exclude:
-  - scripts/
-  - README.md
-  - jekyll-theme-hamilton.gemspec
+sass:
+    style: :compressed
+    sass_dir: assets/css/
 
-# Jekyll SEO Tag (Optional)
-# =========================
-twitter:
-  username: ngzhio
-  card: summary
-logo: logo.png
-social:
-  name: Shangzhi Huang
-  links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
