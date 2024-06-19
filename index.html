@@ -1,26 +1,46 @@
 ---
 layout: default
+robots: noindex
 ---
 
-{% for post in paginator.posts %}
-<section>
-  <h2>
-    <a href='{{ site.url }}{{ post.url }}' title='{{ post.title }}'>
-      {{ post.title }}
-    </a>
-  </h2>
-  
-  <p>{{ post.excerpt | strip_html | truncate: 250 }}</p>
-</section>       
-{% endfor %}
+<!--<div class="main-post-list">-->
 
-{% if paginator.previous_page %}
-<a href='{{ site.url }}{{ paginator.previous_page_path }}'>Previous</a>
-{% endif %}
+  <ul class="timeline">
+    
+    {% for project in site.data.projects %}
 
-&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
+          </div>
+          <div class="timeline-body">
+            {% if project.desc %}
+              {{ project.desc | markdownify }}
+            {% else %}
+            <div repotext="{{ project.repo }}">
+              <span class="desc"></div>
+            </div>
+            {% endif %}
+            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers"> ...</span></a>
+              <div style="height: 10px;"></div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    <!--
+    <li class="timeline-inverted">
+      <div class="timeline-image">
+        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+      </div>
+    </li> -->
+  </ul>
 
-{% if paginator.next_page %}
-<a href='{{ site.url }}{{ paginator.next_page_path }}'>Next</a>
-{% endif %}
+<!--</div>-->
 

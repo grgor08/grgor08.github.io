@@ -1,32 +1,37 @@
-title: Yasir Ibrahim
-description: A Phd Candidate
-author: Yasir Ibrahim
-url: 'https://grgor08.github.io' 
+# Site settings
+title: Thomas Zühlke
+description: 'Business Card Page'
+url: 'https://www.zuehlke.cloud'
 baseurl: ''
-avatar: /DSC01405.jpg
-social:
-  linkedin: "https://www.linkedin.com/in/yasir-abdelaziz/"
-  scholar: "https://scholar.google.com/citations?user=1X2D49kAAAAJ&hl=en&authuser=1"
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
+profilepic: '/images/tzuehlke.jpg'
+bkimage: '/images/bk1.jpg'
+google_analytics: UA-XXXXXX-X
+font_awesome: 'XXXXXXXXXX.js'
+
+author:
+  name: 'Thomas Zühlke'
+  email: thomas@zuehlke.cloud
+  mastodon: tzuehlke@mstdn.social
+  twitter_username: thomzuehlke
+#  facebook_username: joshgerdes
+  github_username:  tzuehlke
+  linkedin_username:  thomas-zühlke-889182165
+  meetup_name: Azure-Meetup-Rostock-MV
+
+# Build settings
+destination: _site
 markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-plugins:
-  - jekyll-paginate
-paginate: 10
-paginate_path: /page-:num
-
-#disqus-id: your-disqus-id
-
-source: .
-destination: ./_site
-
 sass:
-    style: :compressed
-    sass_dir: assets/css/
+    sass_dir: _sass
+    style: compressed
 
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png']
