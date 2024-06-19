@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<head>
-    <meta charset='utf-8'>
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %} 
-            {{ site.name }} &mdash; {{ site.description }}
-        {% endif %}
-    </title>
+  <head>
+    {% include head.html %}
+  </head>
 
-    {% if site.highlighter %}
-        <link rel='stylesheet' href='{{ site.url }}/assets/css/syntax.css' type='text/css'>
-    {% endif %}
-    
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        {% include header.html %}
+      </header>
+      
+      <div class="site-body wrapper">
+        <aside class="site-sidebar" id="site-sidebar">
+          {% if page.toc %}
+            {% include sidebar-toc.html %}
+          {% else %}
+            {% include sidebar.html %}
+          {% endif %}
+        </aside>
+        <main class="site-main" id="site-main" aria-label="Content" tabindex="1">
+          {{ content }}
+          <footer class="site-footer">
+            {% include footer.html %}
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
 
-</head>
-
-<body>
-    {% include header.html %}
-
-    {{ content }}
-<hr>
-    <p><small> <i>Build with <a href="https://jekyllrb.com/">Jekyll</a> and  <a href="https://github.com/cyevgeniy/jekyll-true-minimal/">true minimal theme</a></i> </small></p>
-</body>
 </html>
